@@ -12,7 +12,9 @@
   "description": "",
   "dependencies": {
     "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
     "express": "^5.1.0",
+    "mongodb": "^6.19.0",
     "mongoose": "^8.18.0",
     "nodemon": "^3.1.10"
   }
