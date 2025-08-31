@@ -6,7 +6,11 @@ require("dotenv").config();
 const UserModel = require("./models/Users");
 
 const app = express();
-app.use(cors());
+app.use(cors(
+  {
+  origin: "https://crud-frontend-sigma-flame.vercel.app/"
+}
+));
 app.use(express.json());
 // ✅ MongoDB Atlas Connection
 mongoose
