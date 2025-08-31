@@ -6,7 +6,11 @@ const UserModel = require('./models/Users');
 
 
 const app = express();
-app.use(cors());
+app.use(cors(
+  {
+  origin: "https://crud-frontend-sigma-flame.vercel.app"
+}
+));
 app.use(express.json());
 
 mongoose.connect("mongodb+srv://rihashehzadi2003_db_user:Allah*111@cluster0.fiooidn.mongodb.net/crud?retryWrites=true&w=majority&appName=Cluster0")
