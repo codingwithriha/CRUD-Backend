@@ -13,7 +13,7 @@ app.use(cors(
 ));
 app.use(express.json());
 
-mongoose.connect("mongodb://atlas-sql-68b445f07e42b065804b80e3-k8jtlr.a.query.mongodb.net/crud?ssl=true&authSource=admin")
+mongoose.connect(process.env.MONGO_URI);
 
 app.get('/', (req, res) => {
     UserModel.find({})
