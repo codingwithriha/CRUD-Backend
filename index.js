@@ -13,7 +13,7 @@ app.use(cors(
 ));
 app.use(express.json());
 
-mongoose.connect("mongodb+srv://rihashehzadi2003_db_user:Allah*111@cluster0.fiooidn.mongodb.net/crud?retryWrites=true&w=majority&appName=Cluster0")
+mongoose.connect("mongodb://atlas-sql-68b445f07e42b065804b80e3-k8jtlr.a.query.mongodb.net/crud?ssl=true&authSource=admin")
 
 app.get('/', (req, res) => {
     UserModel.find({})
